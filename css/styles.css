@@ -10,12 +10,6 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 *,
 *:before,
 *:after {
@@ -26,7 +20,7 @@ body {
 }
 
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
 
@@ -48,7 +42,6 @@ body {
   width: 95%;
   max-width: 1500px;
   margin: 0 auto;
-  flex-grow: 1;
 }
 
 .seccion__flex {
@@ -56,13 +49,14 @@ body {
   justify-content: space-around;
   gap: 10px;
   flex-flow: row wrap;
+  margin-bottom: 100px;
 }
 
 /* seccion */
 
 .seccion {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   margin-bottom: 20px;
   box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
 }
@@ -73,7 +67,9 @@ body {
   background-image: url(../imagenes/fondo-1.png);
   background-repeat: no-repeat;
   height: 193px;
-  background-size: 100%;
+  background-size: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .seccion:nth-child(2) .seccion__img {
@@ -82,13 +78,15 @@ body {
   background-repeat: no-repeat;
   height: 193px;
   background-size: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
 
 .seccion__imagen {
   border-radius: 50%;
   position: absolute;
-  bottom: -50px;
-  left: calc(50% - 60px);
+  bottom: -60px;
+  left: calc(50% - 60px); /*centra elemento circular*/
 }
 
 .seccion__contenido {
@@ -100,7 +98,9 @@ body {
 }
 
 .seccion__heading {
-  margin: 50px 0 20px 0;
+  margin: 50px 0 15px 0;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .seccion__texto {
@@ -116,7 +116,6 @@ body {
 }
 
 .footer {
-  margin-top: 170px;
   background-color: var(--color-Principal);
   padding: 20px;
 }
