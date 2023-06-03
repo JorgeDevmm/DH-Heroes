@@ -82,6 +82,12 @@ html {
   border-top-right-radius: 16px;
 }
 
+.seccion__corazones {
+  position: absolute;
+  top: 15.88px;
+  left: 21px;
+}
+
 .seccion__imagen {
   border-radius: 50%;
   position: absolute;
